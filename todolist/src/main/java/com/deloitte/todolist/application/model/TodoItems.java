@@ -3,7 +3,6 @@ package com.deloitte.todolist.application.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.validation.constraints.NotBlank;
 
 import org.springframework.context.annotation.Configuration;
 
@@ -19,7 +18,6 @@ public class TodoItems {
 	@Id
 	@GeneratedValue
 	private Long id;
-	@NotBlank
 	private String title;
 	private boolean isDone;
 	private String description;

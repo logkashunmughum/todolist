@@ -1,4 +1,4 @@
-package com.deloitte.todolist.application.configure;
+package com.deloitte.todolist.application.config;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

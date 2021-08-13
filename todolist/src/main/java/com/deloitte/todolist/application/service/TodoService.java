@@ -3,12 +3,21 @@ package com.deloitte.todolist.application.service;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.deloitte.todolist.application.model.TodoItems;
+import com.deloitte.todolist.application.repository.TodoRepository;
 
 @Service
 public class TodoService {
 
+	@Autowired
+	TodoRepository todoRepo;
+		
+	
 	List<HashMap<String,String>> loginCredentials = new ArrayList<>();
 	HashMap<String,String> user = new HashMap<>();
 	
@@ -28,4 +37,5 @@ public class TodoService {
 		return false;
 		
 	}
+	
 }
